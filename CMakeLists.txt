@@ -3,4 +3,4 @@ project(cpp)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(cpp ch1/ch1.cpp)
+add_executable(cpp main.cpp)
