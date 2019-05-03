@@ -5,11 +5,13 @@
 
 #include <iostream>
 #include "exAns/ch2.h"
+
 int main()
 {
 
     test();
     printf("\n");
+
     system("pause");
     return 0;
 

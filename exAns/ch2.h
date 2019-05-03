@@ -7,6 +7,10 @@
 
 void test();
 void ex2_3();
+void ex2_4();
+void ex2_8();
+void ex2_9();
+
 
 
 
