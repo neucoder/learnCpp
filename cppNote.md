@@ -100,8 +100,20 @@
     - auto 自动推到类型，使用引用时，得到的是引用对象的类型。不能推导顶层的const
     - decltype 顶层的const
     
-    - 预处理器
-    ```
+## 字符串向量数组
+- ### using
+    - `using std::cin`命名空间声明
+    - 头文件中不要使用using
+  
+- ### string
+    - 表示可变长字符序列，初始化方式,使用等号是拷贝初始化，否则是直接初始化
+      ![](img/stringInit.jpg)
+    - string的操作
+      ![](img/strOP.jpg)
+    - string::size() 返回string::size_type类型
+    - 连接字符串的加号必须保证至少有一个字符串
+    - cctype
+      ![](img/cctype.jpg)
     
-    ```
+    
     

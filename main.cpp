@@ -5,11 +5,11 @@
 
 #include <iostream>
 #include "exAns/ch2.h"
-
+#include "exAns/ch3.cxx"
 int main()
 {
 
-    test();
+    testCh3();
     printf("\n");
 
     system("pause");
