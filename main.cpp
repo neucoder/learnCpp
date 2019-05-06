@@ -8,6 +8,7 @@
 #include <vector>
 #include "exAns/ch2.h"
 #include "exAns/ch3.cxx"
+#include "exAns/ch4.hxx"
 using std::cin;
 using std::cout;
 using std::string;
@@ -19,8 +20,8 @@ int main()
 {
 
 
-    testCh3();
 
+    test_ch4();
     getchar();
     //system("pause");
     return 0;

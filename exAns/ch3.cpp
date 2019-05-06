@@ -487,26 +487,56 @@ void ex3_32()
 
 }
 
+
+
 void testCh3()
 {
 
 
-    int arr[] = {0,1,2,3,4,-1,5,6,7,8,9};
+    int arr[] = { 90, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+    vector<int> v(begin(arr), end(arr));
 
-    int *start = begin(arr);
-    int *stop = end(arr);
-    while (start < stop && *start >= 0)
+    for (auto i : v) cout << i << " ";
+    cout << endl;
+
+
+    /*
+    int a[3][4] = {0, 3, 6, 9};
+
+    for (auto &c : a)
     {
-        start++;
+        for (auto t : c)
+        {
+            cout << t << "\t";
+        }
+        cout << endl;
     }
-    cout << *start << endl;
+    cout << endl;
+    for (auto p = begin(a); p != end(a); p++)
+    {
+        for (auto pp = begin(*p); pp != end(*p); ++pp)
+        {
+            cout << *pp << "\t";
+        }
+        cout << endl;
+    }
+*/
+//    int arr[] = {0,1,2,3,4,-1,5,6,7,8,9};
+//
+//    int *start = begin(arr);
+//    int *stop = end(arr);
+//    while (start < stop && *start >= 0)
+//    {
+//        start++;
+//    }
+//    cout << *start << endl;
 
 
 
 
 
 
-   // ex3_32();
+    // ex3_32();
     //ex3_24();
 
 
