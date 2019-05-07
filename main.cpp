@@ -9,6 +9,7 @@
 #include "exAns/ch2.h"
 #include "exAns/ch3.cxx"
 #include "exAns/ch4.hxx"
+#include "exAns/ch5.hxx"
 using std::cin;
 using std::cout;
 using std::string;
@@ -20,8 +21,7 @@ int main()
 {
 
 
-
-    test_ch4();
+    test_ch5();
     getchar();
     //system("pause");
     return 0;
