@@ -195,6 +195,30 @@
 
 
 ## 语句
-
+- 范围for语句，容器，数组，字符串
+- do-while至少会执行一次语句
+- try catch throw
+  ```cpp
+  
+  if(item1.isbn() !+ item2.isbn())
+  {
+      throw runtime_error("Data must refer to same ISBN");
+  }
+  
+  
+  try {
+    program-statements
+  }
+  catch ()
+  {
+    handler-statements
+  }
+  catch ()
+  {
+    handler-statements
+  }
+  
+  ```
+  ![exception](img/exception.jpg)
 
 
