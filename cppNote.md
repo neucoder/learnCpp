@@ -220,5 +220,46 @@
   
   ```
   ![exception](img/exception.jpg)
+  
+## 函数
+
+- 局部静态对象第一次初始化之后会一直存在，直到程序结束才消失
+- 如果函数无需改变引用形参的值，使用常量引用 `void print(const int a)`
+    - 使用引用避免拷贝，在函数中我们不希望改变内容，所以为常量。
+    - 传到函数外部的变量，用引用，值会改变，所以是普通引用。
+    - 只需要 c 的值，这个实参可能是右值(右值实参无法用于引用形参)，所以 c 不能用引用类型。
+- 数组参数
+  - c风格标记结束
+  - 标准库传递首尾指针`void print(*begin, *end)`
+  - 数组指针和数组大小`void print(const int *a, size_t n)`
+  - 传递数组引用 `void print(int (&a)[10])`
+  - 二维数组`void print(int (*mat)[10], int row)`
+     `void print(int mat[][10], int row)`
+     
+- 可变形参
+  - initializer_list形参
+    ![相关操作](img/initializer_list.jpg)
+    ```cpp
+    int sumInt(initializer_list<int> s)
+    {
+        int sum = 0;
+        for (const auto &c : s)
+        {
+            sum += c;
+        }
+        return sum;
+    }
+
+    ```
+- 返回值
+    - 不能返回局部变量的引用和指针
+    - 引用返回左值，可以进行赋值`get_val(s, 0) = 'A'`
+    - 可以用列表初始化返回值  `return {"function","ok!"}`
+    - 返回数组指针   `int (*func(int i))[10];`
+    - 尾置返回类型 `auto func(int i) -> int(*)[10];`
+    
+- 特殊特性
+    - 默认实参，一旦某个形参被赋予了默认值，后面的所有形参都必须是默认值
+    
 
 
