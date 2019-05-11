@@ -27,18 +27,6 @@ Sales_data &Sales_data::comnine(const Sales_data &rhs)
     return *this;
 }
 
-double Sales_data::avg_price() const
-{
-    if (units_sold)
-    {
-        return revenue / units_sold;
-    }
-    else
-    {
-        return 0;
-    }
-}
-
 
 istream &read(istream &is, Sales_data &item)
 {
@@ -62,6 +50,7 @@ Sales_data add(const Sales_data &lhs, const Sales_data &rhs)
     return sum;
 }
 
+/*
 void ex7_3()
 {
     Sales_data total;
@@ -88,7 +77,7 @@ void ex7_3()
         cerr << "No data?!" << endl;
     }
 }
-
+*/
 class Anime
 {
     string name;
@@ -105,6 +94,10 @@ public:
 
 };
 
+Screen::pos Screen::size() const
+{
+    return height * width;
+}
 void ex7_7()
 {
     Sales_data total;
@@ -165,10 +158,45 @@ void ex7_13()
 }
 
 
+void Screen::some_member() const
+{
+    ++access_ctr;
+}
+
+int &changeValue(int &a)
+{
+    a = a * a;
+    return a;
+}
+
+inline void Window_mgr::clear(Window_mgr::ScreenIndex i)
+{
+    Screen &s = screens[i];
+    s.contents = string(s.height * s.width, ' ');
+}
+
+
+
+
+
+
+
+
 void test_ch7()
 {
-    Anime cat("hua", 3);
-    cout << cat.getName() << " " << cat.getAge() << endl;
+
+
+    X a3("999", 12, 1.2);
+    /*
+    Screen myScreen(5, 5, 'X');
+    myScreen.move(4, 0).set('#').display(cout);
+    cout << "\n";
+    myScreen.display(cout);
+    cout << "\n";
+
+     */
+//    Anime cat("hua", 3);
+//    cout << cat.getName() << " " << cat.getAge() << endl;
 
     //Person p("zhang", "us");
     //p.print();
