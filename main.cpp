@@ -12,6 +12,7 @@
 #include "exAns/ch4.hxx"
 #include "exAns/ch5.hxx"
 #include "exAns/ch6.hxx"
+#include "exAns/ch7.hxx"
 using std::cin;
 using std::cout;
 using std::string;
@@ -23,7 +24,7 @@ int main(int argc, char **argv)
 {
 
 
-    test_ch6();
+    test_ch7();
 
     getchar();
     //system("pause");
