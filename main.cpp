@@ -7,12 +7,15 @@
 #include <string>
 #include <vector>
 #include <cstdlib>
+#include <ctime>
+#include <algorithm>
 #include "exAns/ch2.h"
 #include "exAns/ch3.cxx"
 #include "exAns/ch4.hxx"
 #include "exAns/ch5.hxx"
 #include "exAns/ch6.hxx"
 #include "exAns/ch7.hxx"
+#include "exAns/ch8.hxx"
 using std::cin;
 using std::cout;
 using std::string;
@@ -24,7 +27,7 @@ int main(int argc, char **argv)
 {
 
 
-    test_ch7();
+    test_ch8();
 
     getchar();
     //system("pause");
